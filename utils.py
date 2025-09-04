@@ -61,9 +61,8 @@ def getBoard(corners, img):
             temp_img = img[y1:y2, x1:x2]
             temp_img = cv.resize(temp_img,(300,300))
 
-            cv.imshow("img", temp_img)
-
             text = pt.image_to_string(temp_img, config="--psm 8 digits")
+            print(text)
             sudoku_board[j][i] = text.strip()
 
     # Make all the values into integers
