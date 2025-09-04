@@ -14,7 +14,6 @@ corners = utils.findCorners(img)
 
 # Get the 2d array of the sudoku puzzle
 sudoku_board = utils.getBoard(corners, img)
-solver.printBoard(sudoku_board)
 
 # Solve the board
 solver.solve(sudoku_board)
